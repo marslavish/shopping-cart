@@ -1,0 +1,92 @@
+.homepage {
+  font-family: $serif-font;
+
+  .winter {
+    color        : white;
+    border       : 1px solid rgba(255, 255, 255, 0.598);
+    line-height  : 5rem;
+    text-align   : center;
+    height       : 5rem;
+    width        : 10rem;
+    border-radius: 50%;
+    margin-top   : 6rem;
+  }
+
+  .new-collection {
+    font-size : $extra-large-font;
+    position  : relative;
+    margin-top: 6rem;
+    z-index   : 3;
+  }
+
+  .bottom-text {
+    margin-top     : 7rem;
+    color          : black;
+    text-decoration: none;
+    cursor         : pointer;
+
+    .see-all {
+      font-weight: $medium;
+    }
+
+    &:hover {
+      .see-all {
+        color: white;
+      }
+
+      .line {
+        border-top: 3px solid white;
+      }
+
+      .arrow {
+        border       : 3px solid white;
+        border-bottom: 0;
+        border-left  : 0;
+      }
+    }
+  }
+}
+
+.line-arrow {
+  display    : flex;
+  align-items: center;
+  position   : relative;
+
+  .line {
+    width        : $line-length;
+    border-top   : 3px solid black;
+    opacity      : 1;
+    border-radius: 1px;
+  }
+
+  .arrow {
+    width        : $arrow-width;
+    height       : $arrow-width;
+    border       : 3px solid black;
+    border-bottom: 0;
+    border-left  : 0;
+    transform    : rotate(45deg);
+    position     : absolute;
+    left         : $line-length - $arrow-width;
+    top          : 8px;
+  }
+}
+
+.white-t-shirt,
+.black-t-shirt {
+  position: absolute;
+  width   : 62vh;
+  height  : 87vh;
+}
+
+.white-t-shirt {
+  bottom : 0;
+  left   : 36vw;
+  z-index: 2;
+}
+
+.black-t-shirt {
+  top    : 0;
+  right  : 0;
+  z-index: 1;
+}

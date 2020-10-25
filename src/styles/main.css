@@ -1,0 +1,275 @@
+a:hover {
+  color: white;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link.home {
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
+}
+
+.homepage {
+  font-family: "Playfair Display", serif;
+}
+
+.homepage .winter {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.598);
+  line-height: 5rem;
+  text-align: center;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-top: 6rem;
+}
+
+.homepage .new-collection {
+  font-size: 6rem;
+  position: relative;
+  margin-top: 6rem;
+  z-index: 3;
+}
+
+.homepage .bottom-text {
+  margin-top: 7rem;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homepage .bottom-text .see-all {
+  font-weight: 500;
+}
+
+.homepage .bottom-text:hover .see-all {
+  color: white;
+}
+
+.homepage .bottom-text:hover .line {
+  border-top: 3px solid white;
+}
+
+.homepage .bottom-text:hover .arrow {
+  border: 3px solid white;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.line-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.line-arrow .line {
+  width: 2.2rem;
+  border-top: 3px solid black;
+  opacity: 1;
+  border-radius: 1px;
+}
+
+.line-arrow .arrow {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 3px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  left: 1.1rem;
+  top: 8px;
+}
+
+.white-t-shirt,
+.black-t-shirt {
+  position: absolute;
+  width: 62vh;
+  height: 87vh;
+}
+
+.white-t-shirt {
+  bottom: 0;
+  left: 36vw;
+  z-index: 2;
+}
+
+.black-t-shirt {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.product-container {
+  width: 280px;
+  height: 420px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.product-container:last-child {
+  margin-bottom: 10rem;
+}
+
+.product-container .product-img {
+  width: 280px;
+  height: 420px;
+  margin-bottom: 0.4rem;
+}
+
+.product-container .product-title {
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.product-container .product-price {
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  top: -1rem;
+}
+
+.product-container:hover .btn-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-container {
+  position: relative;
+  top: -7.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.btn-container .quantity-container {
+  border: 1px solid black;
+}
+
+.btn-container .quantity-container .decrement-btn,
+.btn-container .quantity-container .increment-btn {
+  border-radius: 0;
+  background: white;
+  outline: none;
+}
+
+.btn-container .quantity-container .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-container .quantity-container .quantity-input-field {
+  width: 4rem;
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+}
+
+.btn-container .add-to-cart-btn {
+  border-radius: 0;
+  font-size: 0.9rem;
+  width: 9rem;
+  background: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  opacity: 1;
+}
+
+.my-order {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+
+.cart-item-container {
+  max-width: 50rem;
+}
+
+.cart-item-title,
+.cart-item-price {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+}
+
+.cart-quantity-container .cart-decrement-btn,
+.cart-quantity-container .cart-increment-btn {
+  border-radius: 0;
+  background: white;
+  outline: none;
+}
+
+.cart-quantity-container .cart-quantity-input-field {
+  width: 2.6rem;
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+}
+
+.cart-quantity-container .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cart-item-total {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+}
+
+.cart-delete-btn {
+  border-radius: 0;
+}
+
+.cart-delete-btn:hover {
+  background: black;
+}
+
+.total-price {
+  font-family: "Playfair Display", serif;
+  width: 14rem;
+}
+
+.checkout-btn {
+  width: 14rem;
+  background: black;
+  border-radius: 0;
+  padding: 0.6rem 0;
+  font-weight: lighter;
+}
+
+body {
+  background: #c4c3bc;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+/*# sourceMappingURL=main.css.map */

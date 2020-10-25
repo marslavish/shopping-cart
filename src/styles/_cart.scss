@@ -1,0 +1,61 @@
+.my-order {
+  text-align: center;
+  font-family: $serif-font;
+  margin-bottom: 2rem;
+}
+
+.cart-item-container {
+  max-width: 50rem;
+}
+
+.cart-item-title,
+.cart-item-price {
+  font-family: $serif-font;
+  font-size: 1.2rem;
+}
+
+.cart-quantity-container {
+  .cart-decrement-btn,
+  .cart-increment-btn {
+    border-radius: 0;
+    background: white;
+    outline: none;
+  }
+
+  .cart-quantity-input-field {
+    width     : 2.6rem;
+    text-align: center;
+    border-radius: 0;
+    border: 0;  
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+}
+
+.cart-item-total {
+  font-family: $serif-font;
+  font-size: 1.3rem;
+}
+
+.cart-delete-btn {
+  border-radius: 0;
+  
+  &:hover {
+    background: black;
+  }
+}
+
+.total-price {
+  font-family: $serif-font;
+  width: 14rem;
+}
+
+.checkout-btn {
+  width: 14rem;
+  background: black;
+  border-radius: 0;
+  padding: 0.6rem 0;
+  font-weight: lighter;
+}

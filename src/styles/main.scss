@@ -1,0 +1,17 @@
+@import './variables';
+@import './navbar';
+@import './home';
+@import './shop';
+@import './cart';
+
+body {
+  background: $bg-color;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+
+
+

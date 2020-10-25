@@ -40,7 +40,7 @@ function App() {
       <div>
         <Nav quantity={totalQty} />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/shopping-cart" exact component={Home} />
           <Route path="/shop">
             <Shop checkQtyUpdate={checkQtyUpdate} />
           </Route>

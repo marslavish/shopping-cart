@@ -5,7 +5,11 @@ export default function Nav({ quantity }) {
   return (
     <ul className="nav row mt-3 d-flex align-items-center">
       <li className="nav-item col-4 pl-5 pb-2">
-        <NavLink to="/" className="nav-link home" activeClassName="acitve">
+        <NavLink
+          to="/shopping-cart"
+          className="nav-link home"
+          activeClassName="acitve"
+        >
           Home.
         </NavLink>
       </li>
